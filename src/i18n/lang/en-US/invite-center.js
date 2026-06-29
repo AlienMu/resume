@@ -1,0 +1,115 @@
+export const inviteCenter = {
+  sidePanel: {
+    title: 'Personal Center',
+    nav: {
+      myIncome: 'My Earnings',
+      inviteFriends: 'Invite Friends',
+      resumeManage: 'Resume Management',
+      uploadResume: 'Upload Resume',
+      inviteMessageCenter: 'Message Center',
+      inviteAccountSetting: 'Account Settings',
+    },
+  },
+  myIncome: {
+    tabs: 'Earnings Overview (USDT) | Withdrawal Records',
+    button: 'Withdraw | Invite Friends to Earn Together',
+    tips: [
+      'Invite Commission Rules:',
+      'When an invitee uploads a shared resume and it is downloaded with payment, their inviter earns a 25% commission. The more you invite, the more you earn.',
+      'Resume Validity and Violation Penalties:',
+      'To ensure the contact details and work information in uploaded resumes are genuine and valid, a 10-day lock-up period applies from the upload date.',
+      'If a resume is reported for fraud during the lock-up period, the fees paid by the company HR must be refunded. Three consecutive violations will permanently freeze the account.',
+      'Before uploading a resume, please double-check that all information is accurate and contact details are valid.',
+      'Platform Withdrawal Rules:',
+      'The minimum withdrawal amount is {minAmount} USDT. The platform charges {feeRate}% of the withdrawal amount as a service and operations fee.',
+    ],
+    total: ['My Resume Earnings', 'Invite Commission Earnings', 'Total Earnings', 'Withdrawn', 'Locked Withdrawal', 'Available to Withdraw'],
+    daysAgo: ["Today's Earnings (USDT)", "Yesterday's Resume Earnings", "Yesterday's Invite Commission Earnings", "Yesterday's Total Earnings"],
+    loadFailed: 'Failed to retrieve earnings data, please try again later',
+    detailTitle: 'Earnings Details | Your inviter is: {text}',
+    detailColumn: ['Time', 'Earnings (USDT)', 'Commission Level', 'Invite Chain'],
+    recordsColumn: ['Withdrawal Time', 'Receiving Account', 'Receiving Account Image', 'Amount Received', 'Payment Proof', 'Withdrawal Status', 'Withdrawal Feedback'],
+    withdrawApply: {
+      title: 'Withdrawal Application USDT',
+      submitText: 'Confirm Submission',
+      arrivalDesc: 'After deducting the {fee}% platform operations fee',
+      fields: {
+        orderNo: 'Order No.',
+        amount: 'Withdrawal Amount',
+        arrivalAmount: 'Amount Received',
+        accountType: 'Account Type',
+        walletAddress: 'Your Receiving Account (USDT Address)',
+        qrcodeUrl: 'Receiving Account Address QR Code',
+      },
+      placeholders: {
+        amount: 'Please enter your withdrawal amount',
+        walletAddress: 'Please enter your USDT address',
+      },
+      upload: {
+        tip: 'Upload a USDT address image for preview, please carefully verify the account',
+        drag: 'Drag the payment screenshot here, or click to upload',
+        limit: 'Only jpg and png formats are supported, with a size no larger than 500KB',
+      },
+      rules: {
+        amountRequired: 'Please enter the withdrawal amount',
+        amountInvalid: 'Please enter a valid withdrawal amount',
+        amountExceed: 'The withdrawal amount cannot exceed the available balance {amount}',
+        walletAddressRequired: 'Please enter the receiving account (USDT address)',
+        walletAddressInvalid: 'The receiving account can only contain English letters (upper and lower case) and numbers',
+        qrcodeUrlRequired: 'Please upload the receiving account address QR code',
+      },
+      message: {
+        success: 'Withdrawal application submitted, please wait for review',
+      },
+      accountTypeOptions: {
+        tron: 'TRC20',
+      },
+      notice: 'Please upload the payment proof image after submitting. The payment will be completed once approved by the admin. The withdrawal transaction fee is borne by the individual.',
+    },
+  },
+  inviteFriends: {
+    share: 'My Invite Link | My Invite Code',
+    button: 'Copy Invite',
+    mask: 'After uploading <b>5 resumes</b> | you can invite friends to enjoy commissions and earn money together!',
+    loadFailed: 'Failed to retrieve invite information, please try again later',
+    copyLinkSuccess: 'Invite link copied',
+    copyCodeSuccess: 'Invite code copied',
+    copyFailed: 'Copy failed, please try again later',
+    shareMessages: [
+      'Just 3 seconds to upload your resume, then someone earns money for you every day! → Every time it is downloaded, USDT goes straight into your wallet → Break even in as little as 7 days, hit 10,000 USDT in 30 days. Copy the link to your browser now and start earning! {link}',
+      "Don't let your resume just sit on your computer! Turn it into a money printer now: ❶ Upload → ❷ Get downloaded → ❸ Instantly receive USDT earnings. The platform's limited-time \"cash giveaway mode\" is now live. The earlier you upload, the earlier you earn passively! Copy the link now and grab the first wave of rewards ↓{link}",
+      'Earning 10,000 USDT a month in passive income is this simple: ① Click the link → ② Upload your resume → ③ Sit back and wait for others to download. Others look for jobs, you collect download fees! Spots are limited, every minute you wait is money lost! {link}',
+    ],
+    tips: [
+      'Limited-Time Get-Rich Secret · Just for You',
+      '1. Your exclusive invite code automatically updates on the "last day of each month", remember to make a push before it expires!',
+      '2. Send the URL + invite code to your HR friends → they register + upload resumes → once downloaded, you securely earn a <span class="mui-error-text">25% commission!</span>',
+      '3. Invite 1 person for 1 stream of passive income, invite 100 people for 100 cash flows. No limit on the number of people, no cap on bonuses. Act now and turn other people\'s job search into your money-making path!',
+    ],
+  },
+  resumeManage: {
+    headButton: 'Upload Resume to Earn | Invite Friends to Earn',
+    columns: ['Upload Time', 'Candidate', 'Desired Position', 'Downloads', 'Resume Price (USD)', 'Resume Earnings (USDT)', 'Resume Status'],
+    operate: {
+      edit: 'Edit Resume',
+      applyHighValue: 'Apply for High Value',
+    },
+    valueStatus: {
+      normal: 'Standard Resume',
+      applying: 'High Value Application Pending',
+      high: 'High Value Resume',
+    },
+    highValueModal: {
+      title: 'Apply for High Value Resume',
+      content: 'Apply to adjust the resume price to {originalPrice} USD (discounted to {discountPrice} USD)',
+      okText: 'Apply',
+    },
+    message: {
+      applySuccess: 'Application submitted, please wait for review',
+    },
+    tips: {
+      highValue: 'High-end job seekers expecting a monthly salary of 10,000 USD can apply for a high value resume, original price {originalPrice} USD (discounted to {discountPrice} USD)',
+    },
+    loadFailed: 'Failed to retrieve resume list, please try again later',
+  },
+};

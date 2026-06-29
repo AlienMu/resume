@@ -1,0 +1,115 @@
+export const inviteCenter = {
+  sidePanel: {
+    title: '个人中心',
+    nav: {
+      myIncome: '我的收益',
+      inviteFriends: '邀请好友',
+      resumeManage: '简历管理',
+      uploadResume: '上传简历',
+      inviteMessageCenter: '消息中心',
+      inviteAccountSetting: '账号设置',
+    },
+  },
+  myIncome: {
+    tabs: '收益总览(USDT) | 提现记录',
+    button: '提现 | 邀请好友一起赚钱',
+    tips: [
+      '邀请分润规则：',
+      '被邀请者上传共享简历且被付费下载后，其上级邀请人可获得25%分润；邀请越多，收益越高。',
+      '简历有效性与违规罚则：',
+      '为确保上传简历的联系方式与工作内容真实有效，自上传日起设有10天锁定期。',
+      '锁定期内若因简历造假被举报，须退回企业HR已支付费用，连续3次违规将永久冻结账号。',
+      '上传简历前请务必再次核对所有信息真实、联系方式有效。',
+      '平台提现规则：',
+      '最低提现金额为{minAmount} USDT，平台将收取提现金额{feeRate}%作为服务与运营费用。',
+    ],
+    total: ['我的简历收益', '邀请分润收益', '总收益', '已提现', '锁定提现', '可提现'],
+    daysAgo: ['今日收益(USDT)', '昨日简历收益', '昨日邀请分润收益', '昨日总收益'],
+    loadFailed: '收益数据获取失败，请稍后重试',
+    detailTitle: '收益明细 | 您的邀请人为：{text}',
+    detailColumn: ['时间', '收益(USDT)', '分润级别', '邀请链'],
+    recordsColumn: ['提现时间', '收款账号', '收款账号图片', '到账金额', '付款凭证', '提现状态', '提现反馈'],
+    withdrawApply: {
+      title: '提现申请 USDT',
+      submitText: '确认提交',
+      arrivalDesc: '扣除{fee}%的平台运营费用后',
+      fields: {
+        orderNo: '订单号',
+        amount: '提现金额',
+        arrivalAmount: '到账金额',
+        accountType: '账号类型',
+        walletAddress: '您的收款账号(USDT账号地址)',
+        qrcodeUrl: '收款账号地址二维码',
+      },
+      placeholders: {
+        amount: '请输入您的提现金额',
+        walletAddress: '请输入您的 USDT 账号地址',
+      },
+      upload: {
+        tip: '上传USDT地址图片可预览，请仔细核对账号',
+        drag: '将付款截图拖到此处，或点击上传',
+        limit: '仅支持jpg、png格式文件，且大小不超过500KB',
+      },
+      rules: {
+        amountRequired: '请输入提现金额',
+        amountInvalid: '请输入正确的提现金额',
+        amountExceed: '提现金额不可超过可提现余额{amount}',
+        walletAddressRequired: '请输入收款账号(USDT账号地址)',
+        walletAddressInvalid: '收款账号只能包含英文大小写字母和数字',
+        qrcodeUrlRequired: '请上传收款账号地址二维码',
+      },
+      message: {
+        success: '提现申请已提交，请等待审核',
+      },
+      accountTypeOptions: {
+        tron: 'TRC20',
+      },
+      notice: '请您提交后上传付款凭证图片，后台审核通过后将完成打款；提现到账手续费由个人承担',
+    },
+  },
+  inviteFriends: {
+    share: '我的邀请链接 | 我的邀请码',
+    button: '复制邀请',
+    mask: '上传<b>5份</b>简历后 | 即可邀请好友坐享分润，让好友帮你一起赚钱！',
+    loadFailed: '邀请信息获取失败，请稍后重试',
+    copyLinkSuccess: '邀请链接已复制',
+    copyCodeSuccess: '邀请码已复制',
+    copyFailed: '复制失败，请稍后重试',
+    shareMessages: [
+      '只花3秒上传简历，之后天天有人替你赚钱！→ 每被下载一次，USDT自动进钱包→ 最快7天回本，30天直冲10000 USDT。赶紧把链接复制到浏览器，立刻开赚！{link}',
+      '别让简历只躺在电脑里！现在把它变成「印钞机」：❶ 上传 → ❷ 被下载 → ❸ 秒领USDT收益。平台限时「撒钱模式」已开启，早一步上传，早一步躺赚！立即复制链接，抢头波红利 ↓{link}',
+      '月入10000 USDT的「睡后收入」原来这么简单：① 点链接 → ② 传简历 → ③ 坐等别人下载。别人找工作，你收下载费！名额有限，晚一步就少赚一步！{link}',
+    ],
+    tips: [
+      '限时暴富秘技 · 只给你',
+      '1、专属邀请码「每月最后一天」自动更新，记得趁失效前冲一波！',
+      '2、网址＋邀请码发给HR朋友 → 他注册＋上传简历 → 被下载你就稳拿<span class="mui-error-text">25%分润！</span>',
+      '3、邀1人领1份被动收入，邀100人领100份现金流，人数无上限、奖金无封顶。现在就行动，让别人的求职路，变成你的赚钱路！',
+    ],
+  },
+  resumeManage: {
+    headButton: '上传简历赚收益 | 邀请好友赚钱',
+    columns: ['上传时间', '候选人', '求职岗位', '下载量', '简历价格(USD)', '简历收益(USDT)', '简历状态'],
+    operate: {
+      edit: '编辑简历',
+      applyHighValue: '申请高价值',
+    },
+    valueStatus: {
+      normal: '普通简历',
+      applying: '高价值申请中',
+      high: '高价值简历',
+    },
+    highValueModal: {
+      title: '申请高价值简历',
+      content: '申请将简历价格调整为{originalPrice} USD（折后{discountPrice} USD）',
+      okText: '申请',
+    },
+    message: {
+      applySuccess: '申请已提交，请等待审核',
+    },
+    tips: {
+      highValue: '期望月薪10000 USD的高端求职者，可申请高价值简历，原价{originalPrice} USD（折后{discountPrice} USD）',
+    },
+    loadFailed: '简历列表获取失败，请稍后重试',
+  },
+};

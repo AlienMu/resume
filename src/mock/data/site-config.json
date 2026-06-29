@@ -1,0 +1,48 @@
+{
+  "footerCooperationTelegram": "https://t.me/demo",
+  "footerCooperationEmail": "contact@example.com",
+  "sidebarCustomerTelegram": "https://t.me/demo",
+  "logoImage": {
+    "id": 4,
+    "imageType": "logo",
+    "imageUrl": "https://placehold.co/210x65/4f7cff/ffffff?text=Logo",
+    "standardSize": "210×65",
+    "sizeLimit": "Up to 500KB",
+    "supportedFormats": "JPG、JPEG、PNG"
+  },
+  "faviconImage": {
+    "id": 6,
+    "imageType": "favicon",
+    "imageUrl": "https://placehold.co/32x32/4f7cff/ffffff?text=R",
+    "standardSize": "32×32",
+    "sizeLimit": "Up to 100KB",
+    "supportedFormats": "ICO、PNG"
+  },
+  "invitationImage": {
+    "id": 5,
+    "imageType": "invitation",
+    "imageUrl": "https://placehold.co/1100x700/d6e7ff/4f7cff?text=Invite",
+    "standardSize": "1100×700",
+    "sizeLimit": "Up to 1MB",
+    "supportedFormats": "JPG、JPEG、PNG"
+  },
+  "paymentAddressInfo": {
+    "addressId": 18,
+    "address": "TDemoAddressXXXXXXXXXXXXXXXXXXXXXX",
+    "qrcodeId": 17,
+    "qrcodeUrl": "https://placehold.co/250x250/eeeeee/333333?text=QR",
+    "qrcodeSize": "250×250",
+    "qrcodeSizeLimit": "Up to 1MB"
+  },
+  "otherItems": {
+    "companyFreezeDays": 90,
+    "carouselAdCount": 6,
+    "freeJobPostingCount": 3
+  },
+  "highValueResumeOriginalPrice": 30,
+  "highValueResumeDiscountPrice": 15,
+  "normalResumeOriginalPrice": 20,
+  "normalResumeDiscountPrice": 10,
+  "withdrawFeeRate": 20,
+  "minWithdrawAmount": 100
+}

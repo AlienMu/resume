@@ -1,0 +1,67 @@
+# Git Commit Message Guidelines
+
+When generating git commit messages, follow these rules:
+
+## Commit Message Format
+
+Commit messages MUST follow the Conventional Commits format with a type prefix:
+```
+<type>: <subject>
+```
+
+### Type Prefix (Required)
+The commit type must be one of the following:
+- `feat`: 新增功能 (feature)
+- `fix`: 修复 bug
+- `refactor`: 代码重构
+- `pref`: 性能、体验优化
+- `style`: 样式相关修改（不影响逻辑）
+- `docs`: 文档相关
+- `test`: 测试相关
+- `chore`: 构建过程或辅助工具的变化
+- `build`: 构建系统相关（webpack、vite等配置）
+- `ci`: 持续集成相关
+- `revert`: 回滚提交
+
+### Subject Line Rules
+- **Keep it concise**: Maximum 50 characters for the subject line
+- **Use imperative mood**: Write as if completing the sentence "This commit will..."
+- **Focus on what, not how**: Describe the main change, not implementation details
+- **Single line summary**: One clear sentence describing the primary change
+- **Use Chinese for consistency**: Match the project's existing commit style
+
+## Examples
+
+✅ Good:
+- `feat: 优化简历搜索功能`
+- `feat: 新增充值有效期字段`
+- `fix: 修复用户状态更新逻辑`
+- `refactor: 更新简历详情响应结构`
+- `pref: 优化列表加载性能`
+- `style: 调整按钮样式`
+
+❌ Bad:
+- `优化简历搜索功能` (missing type prefix)
+- `feat: 在InviteController中添加简历状态检查，确保查询的简历为正常状态。同时，在ResumeMapper.xml中扩展关键词搜索功能，新增对邮箱、Telegram和其他账号的支持，以增强简历搜索的灵活性和准确性。` (too long, too detailed)
+- `新增用户简历数量检查逻辑，确保用户在获取邀请码前上传至少5份简历，并更新相应的日志信息以增强可读性。` (missing type prefix, too long)
+
+## Guidelines
+
+1. **Type prefix is mandatory**: All commits must start with a valid type prefix (enforced by commitlint)
+2. **One main change per commit**: If multiple unrelated changes, suggest splitting into separate commits
+3. **Omit implementation details**: Don't list all files changed or technical details
+4. **Use Chinese for consistency**: Match the project's existing commit style
+5. **Be specific but brief**: "feat: 优化搜索" is better than "feat: 更新代码", but "feat: 优化简历搜索" is better than listing all changes
+
+## When generating commit messages:
+
+1. **Analyze the diff** to identify the PRIMARY change
+2. **Choose the appropriate type** (feat/fix/refactor/pref/style/docs/test/chore/build/ci/revert)
+3. **Summarize in 3-10 words maximum** (excluding type prefix)
+4. **Use action verbs**: 优化, 新增, 修复, 更新, 移除, 重构
+5. **Format**: `<type>: <简短描述>`
+6. **Avoid listing multiple changes** - focus on the most significant one
+
+## Validation
+
+Commit messages are automatically validated by commitlint via the `.husky/commit-msg` hook. Commits without a valid type prefix will be rejected.

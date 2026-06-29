@@ -1,0 +1,36 @@
+[
+  {
+    "id": 7,
+    "title": "Anti-Fraud Guide",
+    "content": "[Anti-Fraud Guide] Before remote interviews and onboarding, always do reverse due diligence on the company to avoid content theft, unpaid wages and similar issues.",
+    "type": 1,
+    "typeName": "System Notice",
+    "isPopup": 0,
+    "startTime": "2026-02-23 00:00:00",
+    "endTime": "2026-09-30 23:59:59",
+    "sortOrder": 0,
+    "status": 1,
+    "statusName": "Enabled",
+    "appDisplayStatus": 1,
+    "appDisplayStatusName": "Visible",
+    "createdAt": "2026-02-23 23:30:24",
+    "updatedAt": "2026-02-23 23:30:24"
+  },
+  {
+    "id": 6,
+    "title": "Employers Can Post Jobs for Free",
+    "content": "Attention employers: newly registered company accounts can post job openings for free! Register now to unlock the free posting benefit.",
+    "type": 1,
+    "typeName": "System Notice",
+    "isPopup": 0,
+    "startTime": "2026-02-23 00:00:00",
+    "endTime": "2026-07-31 23:59:59",
+    "sortOrder": 0,
+    "status": 1,
+    "statusName": "Enabled",
+    "appDisplayStatus": 1,
+    "appDisplayStatusName": "Visible",
+    "createdAt": "2026-02-23 23:26:44",
+    "updatedAt": "2026-02-23 23:26:44"
+  }
+]

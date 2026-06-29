@@ -1,0 +1,36 @@
+# robots.txt for example.com
+User-agent: *
+Allow: /
+Allow: /work
+Allow: /talent
+Allow: /jobs/
+Allow: /resumes/
+
+# 禁止抓取用户中心和企业中心
+Disallow: /user-center
+Disallow: /enterprise-center
+Disallow: /invite-center
+Disallow: /login
+
+# 禁止抓取API接口
+Disallow: /api/
+
+# Sitemap位置
+Sitemap: https://example.com/sitemap.xml
+
+# 针对百度爬虫的特殊设置
+User-agent: Baiduspider
+Allow: /
+Allow: /work
+Allow: /talent
+Allow: /jobs/
+Allow: /resumes/
+Crawl-delay: 1
+
+# 针对Google爬虫的特殊设置
+User-agent: Googlebot
+Allow: /
+Allow: /work
+Allow: /talent
+Allow: /jobs/
+Allow: /resumes/

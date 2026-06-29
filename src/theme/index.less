@@ -1,0 +1,237 @@
+@import 'ant-design-vue/dist/reset.css';
+@import './common';
+@import './mui';
+
+/**********************************  基础样式 **********************************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none !important;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+  background-color: #f6f6fa;
+  font-size: 14px;
+  position: relative;
+  min-width: 1250px;
+  min-height: 765px;
+}
+
+img {
+  max-width: 100%;
+}
+
+#app {
+  width: 100%;
+  height: 100%;
+}
+
+/**********************************  ant design spin **********************************/
+.ant-spin-blur {
+  opacity: 0.4;
+}
+
+/**********************************  ant design table **********************************/
+.ant-table-tbody :deep(.mui-table-striped) {
+  background-color: #fafafa;
+}
+
+/**********************************  ant design form **********************************/
+.ant-form-inline .ant-form-item-with-help {
+  margin-bottom: 0 !important;
+}
+
+/**********************************  ant design spin **********************************/
+.ant-spin-nested-loading {
+  width: 100%;
+  height: 100%;
+}
+
+.ant-spin-container {
+  width: 100%;
+  height: 100%;
+}
+
+/**********************************  ant design message **********************************/
+
+.ant-message-notice-content {
+  padding: 0 !important;
+  border-radius: 8px !important;
+
+  .ant-message-success {
+    min-width: 549px;
+    padding: 12px;
+    text-align: center;
+    font-size: 16px;
+    color: rgb(13 112 106 / 100%);
+    border-radius: 8px;
+    background: rgb(213 245 240 / 100%);
+    border: 1px solid rgb(143 219 214 / 100%);
+    line-height: 16px;
+
+    span {
+      vertical-align: middle;
+    }
+
+    .anticon {
+      color: rgb(13 112 106 / 100%);
+      font-size: 16px;
+      line-height: 16px;
+      vertical-align: middle;
+    }
+  }
+
+  .ant-message-warning {
+    min-width: 549px;
+    padding: 12px;
+    text-align: center;
+    font-size: 16px;
+    color: rgb(217 108 0 / 100%);
+    border-radius: 8px;
+    background: rgb(255 242 230 / 100%);
+    border: 1px solid rgb(245 187 130 / 100%);
+    line-height: 16px;
+
+    span {
+      vertical-align: middle;
+    }
+
+    .anticon {
+      color: rgb(217 108 0 / 100%);
+      font-size: 16px;
+      line-height: 16px;
+      vertical-align: middle;
+    }
+  }
+
+  .ant-message-error {
+    min-width: 549px;
+    padding: 12px;
+    text-align: center;
+    font-size: 16px;
+    color: @error-color;
+    border-radius: 8px;
+    background: rgb(255 235 235 / 100%);
+    border: 1px solid rgb(237 135 135 / 100%);
+    line-height: 16px;
+
+    span {
+      vertical-align: middle;
+    }
+
+    .anticon {
+      color: @error-color;
+      font-size: 16px;
+      line-height: 16px;
+      vertical-align: middle;
+    }
+  }
+}
+
+/**********************************  富文本HTML样式 **********************************/
+.html-content {
+  /* table 样式 */
+
+  table {
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+  }
+
+  table td,
+  table th {
+    border-bottom: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    padding: 3px 5px;
+  }
+
+  table th {
+    border-bottom: 2px solid #ccc;
+    text-align: center;
+  }
+
+  /* blockquote 样式 */
+
+  blockquote {
+    display: block;
+    border-left: 8px solid #d0e5f2;
+    padding: 5px 10px;
+    margin: 10px 0;
+    line-height: 1.4;
+    font-size: 100%;
+    background-color: #f1f1f1;
+  }
+
+  /* code 样式 */
+
+  code {
+    display: inline-block;
+    background-color: #f1f1f1;
+    border-radius: 3px;
+    padding: 3px 5px;
+    margin: 0 3px;
+  }
+
+  pre code {
+    display: block;
+  }
+
+  /* ul ol 样式 */
+
+  ul,
+  ol {
+    margin: 10px 0 10px 20px;
+  }
+}
+
+/* 当屏幕宽度为 1440px 时的样式 */
+@media screen and (max-height: 900px) {
+  .content,
+  .side-panel {
+    height: calc(100vh - 68px - 20px);
+
+    &.has-search {
+      height: calc(100vh - 172px - 20px);
+    }
+  }
+
+  .work-more.has-hot-tags , .talent.has-hot-tags{
+    .content,
+    .side-panel {
+      &.has-search {
+        /* account for hot-tags (24px height + 14px gap = 38px) */
+        height: calc(100vh - 98px - 48px - 20px - 20px);
+      }
+    }
+  }
+}
+
+/* 当屏幕宽度为 1920px 时的样式 */
+@media screen and (min-height: 920px)  {
+  .content,
+  .side-panel {
+    height: calc(100vh - 68px - 213px);
+
+    &.has-search {
+      height: calc(100vh - 172px - 213px);
+    }
+  }
+
+  .work-more.has-hot-tags{
+    .content,
+    .side-panel {
+      &.has-search {
+        /* account for hot-tags (24px height + 14px gap = 38px) */
+        height: calc(100vh - 98px - 48px - 20px - 213px);
+      }
+    }
+  }
+
+}

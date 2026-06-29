@@ -1,0 +1,146 @@
+@font-sizes: 12, 14, 16, 18, 20;
+// 定义混合函数
+.generate-font-sizes(@sizes) {
+  each(@sizes, {
+    .mui-font-size-@{value} {
+      font-size: @value * 1px !important;
+    }
+  });
+}
+
+// 调用混合函数生成类
+.generate-font-sizes(@font-sizes);
+
+.mui-success-text {
+  color: @success-color;
+}
+
+.mui-font-bold {
+  font-weight: bold;
+}
+
+.mui-font-space {
+  letter-spacing: 4px;
+}
+
+.mui-warning-text {
+  color: @warning-color;
+}
+
+.mui-error-text {
+  color: @error-color;
+}
+
+.mui-desc-text {
+  color: @font-desc-color;
+}
+
+.mui-tip-text {
+  color: @font-tip-color;
+}
+
+.mui-title-text {
+  color: @font-primary-color;
+}
+
+.mui-sub-text {
+  color: @font-sub-color;
+}
+
+.mui-sub-color {
+  color: @sub-color;
+}
+
+.mui-bold {
+  font-weight: 700;
+}
+
+.mui-primary-text {
+  color: @primary-color;
+}
+
+.mui-modal {
+  &.text-center {
+    .ant-modal-content {
+      text-align: center;
+    }
+  }
+
+  .ant-modal-confirm-btns,
+  .ant-modal-footer {
+    text-align: center;
+  }
+
+  .ant-modal-confirm-content {
+    width: 100%;
+    max-width: 100% !important;
+  }
+
+  .ant-modal-content {
+    padding: 24px 20px;
+  }
+
+  .ant-modal-close {
+    top: 20px;
+    right: 20px;
+  }
+}
+
+.mui-primary-tag {
+  border-color: @sub-color;
+  color: @sub-color;
+  background-color: rgb(@primary-color 0.1);
+}
+
+.mui-message-code {
+  border: 1px solid @font-tip-color;
+  width: 110px !important;
+  height: 36px !important;
+  border-radius: 4px;
+
+  &.big {
+    width: 160px !important;
+    height: 50px !important;
+  }
+}
+
+.mui-tips {
+  padding-left: 36px;
+
+  .mui-tips-title {
+    color: @font-sub-color;
+  }
+
+  .mui-tips-desc {
+    font-size: 12px;
+    color: @font-desc-color;
+  }
+}
+
+.mui-common-result {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: calc(100vh - @header-user-height - @footer-height - 10px);
+  background: rgb(240 244 247 / 100%);
+}
+
+.mui-right-line {
+  &:not(:last-child) {
+    padding-right: 9px;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      right: -1px;
+      top: 50%;
+      transform: translateY(-50%);
+      height: 10px;
+      width: 1px;
+      background: rgb(204 204 204 / 100%);
+    }
+  }
+}

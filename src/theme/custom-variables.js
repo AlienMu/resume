@@ -1,4 +1,4 @@
-import { themeColors } from '/@/theme/color.js';
+import { themeColors } from './color.js';
 
 export default {
   '@primary-color': themeColors[0].primaryColor, // Global primary color

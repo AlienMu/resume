@@ -1,6 +1,6 @@
 import { resolve } from 'path';
 import vue from '@vitejs/plugin-vue';
-import customVariables from '/@/theme/custom-variables.js';
+import customVariables from './src/theme/custom-variables.js';
 import Pages from 'vite-plugin-pages';
 import { createSvgIconsPlugin } from 'vite-plugin-svg-icons';
 import path from 'path';
@@ -74,7 +74,7 @@ export default {
         },
       },
     },
-    target: 'modules',
+    target: 'esnext',
     outDir: 'dist', // 指定输出路径
     assetsDir: 'assets', // 指定生成静态文件目录
     assetsInlineLimit: '4096', // 小于此阈值的导入或引用资源将内联为 base64 编码

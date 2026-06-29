@@ -5,8 +5,8 @@
   "scripts": {
     "localhost": "vite --mode localhost",
     "dev": "vite --mode development",
-    "build:dev": "lint-staged vite build  --mode development",
-    "build:test": "lint-staged vite build --mode test",
+    "build:dev": "lint-staged && vite build  --mode development",
+    "build:test": "lint-staged && vite build --mode test",
     "build:pre": "vite build  --mode pre",
     "build:prod": "lint-staged && vite build  --mode production",
     "build:cf": "vite build  --mode production",

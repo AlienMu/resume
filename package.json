@@ -9,6 +9,7 @@
     "build:test": "lint-staged vite build --mode test",
     "build:pre": "vite build  --mode pre",
     "build:prod": "lint-staged && vite build  --mode production",
+    "build:cf": "vite build  --mode production",
     "prepare": "husky"
   },
   "lint-staged": {
